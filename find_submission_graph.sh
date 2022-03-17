@@ -5,7 +5,7 @@ SIZE="100"
 QUERY='{
   query: {
     bool: {
-      should: [{term: {submission: $ID}}, {term: {@id: $ID}}]
+      should: [{term: {submission: $ID}}, {term: {"@id": $ID}}]
     }
   }
 }'
