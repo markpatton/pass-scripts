@@ -1,0 +1,7 @@
+{
+    "@id": "",
+    "@context": "https://oa-pass.github.io/pass-data-model/src/main/resources/context-3.4.jsonld",
+    "submitted": false,
+    "aggregatedDepositStatus": "not-started",
+    "submissionStatus": "draft"
+}

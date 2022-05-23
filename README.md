@@ -42,7 +42,6 @@ The scripts use the environment variables set above.
 
 ## Search
 
-
 All the search scripts return up to 100 objects. You could modify them to page through results if needed.
 
 Find objects whose fields has a given value. For example use `@id` to find objects with a given id. The pass data model documentation lists all the fields.
@@ -76,6 +75,32 @@ You must be using a SSH tunnel for the script to work.
 ./patch.sh 'OBJECT_ID' PATCH_FILE
 ```
 
+## Putting
+
+The put script will you write an object with a certain location.
+
+You must be using a SSH tunnel for the script to work.
+
+```
+./put.sh 'OBJECT_ID' JSON_LD_FILE
+```
+
+## Deleting
+
+The delete script will delete an object. (A tombstone will remain.)
+
+You must be using a SSH tunnel for the script to work.
+
+```
+./delete.sh 'OBJECT_ID'
+```
+
+The delete submission graph script will delete the submission, submission events, deposits and files associated with a submission.
+
+```
+./delete_submission_graph.sh 'OBJECT_ID'
+```
+
 ## Fedora
 
 The get_raw script is a helper to get the raw RDF representation of a PASS object in Fedora.
@@ -84,4 +109,9 @@ The get_raw script is a helper to get the raw RDF representation of a PASS objec
 ./get_raw.sh 'OBJECT_ID'
 ```
 
+The get script is a helper to get the JSON-LD representation of a PASS object in Fedora.
+
+```
+./get.sh 'OBJECT_ID'
+```
 

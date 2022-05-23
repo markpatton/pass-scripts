@@ -2,4 +2,4 @@
 
 ID="$1"
 
-curl "${ID}" -H "cookie: ${PASS_SCRIPTS_COOKIE}"
+curl "${ID}" -u "${PASS_SCRIPTS_FCREPO_CREDENTIALS}" -H "cookie: ${PASS_SCRIPTS_COOKIE}"
